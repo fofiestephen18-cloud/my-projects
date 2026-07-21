@@ -1,0 +1,11 @@
+#key: value 
+name: My pipeline
+
+# nesting = indentation (spaces, never tabs)
+job:
+  runs-on: ubuntu-latest
+
+# a list uses dashes 
+steps:
+  - name: Say hello 
+    runs: echo "hello"
