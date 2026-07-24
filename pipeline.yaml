@@ -2,10 +2,11 @@
 name: My pipeline
 
 # nesting = indentation (spaces, never tabs)
-job:
-  runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-# a list uses dashes 
-steps:
-  - name: Say hello 
-    runs: echo "hello"
+    # a list uses dashes 
+    steps:
+      - name: Say hello 
+        run: echo "hello"
